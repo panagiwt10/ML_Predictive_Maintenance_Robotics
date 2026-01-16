@@ -11,6 +11,7 @@ This project focuses on developing a predictive maintenance system for robots, u
 - [System Architecture](#system-architecture)
 - [Learning Strategies](#learning-strategies)
 - [Visualizations](#visualizations)
+- [Confusion Matrix](#confusion-matrix)
 
 ## Introduction
 
@@ -71,3 +72,31 @@ max and min features have a strong negative correlation (-0.99), indicating that
 mean, sd, rms, kurtosis, and crest are positively correlated, suggesting they may share similar trends in their values.
 
 Features such as skewness and form show weaker correlations with others, which may indicate that they carry different information.
+
+
+
+## Confusion Matrix
+The following confusion matrix shows the performance of the model on the dataset. It provides a detailed breakdown of the model's predictions versus the actual values, highlighting where the model is correct or making errors.
+
+![Comfusion matrix](diagrams/confusion_matrix.png)
+
+
+Interpretation of the Confusion Matrix:
+
+True Positives (Diagonal Elements): The diagonal elements (e.g., Ball_007_1, Ball_014_1, etc.) represent the cases where the model made correct predictions.
+
+Ball_007_1: 52 instances were correctly classified as Ball_007_1, and 5 instances were misclassified as other classes.
+
+Ball_014_1: 52 instances were correctly classified as Ball_014_1, with 1 misclassified as Ball_021_1.
+
+Normal_1: 58 instances were correctly classified as Normal_1.
+
+False Positives and False Negatives: Misclassifications appear off the diagonal. For example, Ball_021_1 is misclassified into multiple other categories. The misclassification rates will give insight into how well the model is generalizing.
+
+Ball_021_1 has 1 misclassified as Ball_007_1 and another misclassified as Ball_014_1.
+
+Model's Strengths and Weaknesses:
+
+The model performs well for Normal_1 and IR_007_1, with minimal misclassifications.
+
+There are a few misclassifications for OR_014_6_1, indicating potential areas for improvement, especially in distinguishing this class from others.
