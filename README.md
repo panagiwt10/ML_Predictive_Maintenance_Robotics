@@ -78,7 +78,7 @@ Features such as skewness and form show weaker correlations with others, which m
 ## Confusion Matrix
 The following confusion matrix shows the performance of the model on the dataset. It provides a detailed breakdown of the model's predictions versus the actual values, highlighting where the model is correct or making errors.
 
-![Comfusion matrix](diagrams/confusion_matrix.png)
+![Confusion matrix](diagrams/confusion_matrix_heatmap.png)
 
 
 Interpretation of the Confusion Matrix:
