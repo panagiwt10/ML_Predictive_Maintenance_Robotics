@@ -10,6 +10,7 @@ This project focuses on developing a predictive maintenance system for robots, u
 - [Usage](#usage)
 - [System Architecture](#system-architecture)
 - [Learning Strategies](#learning-strategies)
+- [Visualizations](#visualizations)
 
 ## Introduction
 
@@ -44,3 +45,33 @@ Learning Strategies:
 The project employs the following machine learning techniques:
 Random Forest Classifier: Used for classifying the data and predicting robot failures.
 Principal Component Analysis (PCA): Applied to reduce the dimensionality of the data and improve model performance.
+
+
+## Heatmap of Feature Correlations
+
+The following heatmap shows the correlation matrix of the features used in the predictive maintenance model. It helps to visualize how each feature relates to the others, which can be important for understanding the relationships between them.
+
+- **max** and **min** features have a strong negative correlation (-0.99), indicating that when one increases, the other tends to decrease.
+- **mean**, **sd**, **rms**, **kurtosis**, and **crest** are positively correlated, suggesting they may share similar trends in their values.
+- Features such as **skewness** and **form** show weaker correlations with others, which may indicate that they carry different information.
+
+![Correlation Heatmap](diagrams/correlation_heatmap.png)
+
+The heatmap is an essential tool for exploring the data before training the model, as it helps identify which features are more or less related. This information can assist in feature engineering, selection, and improving the model's performance.
+
+
+
+Visualizations
+Confusion Matrix Heatmap
+
+The following heatmap shows the confusion matrix of the model's performance, illustrating how the model classifies the robot's maintenance needs:
+
+Correlation Heatmap
+
+The following heatmap shows the correlation matrix of the features used in the predictive maintenance model. It helps to visualize how each feature relates to the others.
+
+max and min features have a strong negative correlation (-0.99), indicating that when one increases, the other tends to decrease.
+
+mean, sd, rms, kurtosis, and crest are positively correlated, suggesting they may share similar trends in their values.
+
+Features such as skewness and form show weaker correlations with others, which may indicate that they carry different information.
