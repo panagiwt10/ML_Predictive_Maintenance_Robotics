@@ -29,7 +29,7 @@ To run the project, you need to install the following libraries:
 - Joblib
 
 
-System Architecture:
+## System Architecture:
 The system includes the following steps:
 Data Loading: Data is loaded from a CSV file and stored in a DataFrame.
 Data Preparation: Columns containing the 'fault' label are isolated and used for model training.
@@ -37,7 +37,7 @@ Model Training: The model is trained using the Random Forest algorithm to predic
 Evaluation and Visualizations: The confusion matrix, feature importances, and histograms are generated to evaluate the model.
 
 
-Learning Strategies:
+## Learning Strategies:
 The project employs the following machine learning techniques:
 Random Forest Classifier: Used for classifying the data and predicting robot failures.
 Principal Component Analysis (PCA): Applied to reduce the dimensionality of the data and improve model performance.
@@ -57,7 +57,7 @@ The heatmap is an essential tool for exploring the data before training the mode
 
 
 
-Visualizations
+## Visualizations
 Confusion Matrix Heatmap
 
 The following heatmap shows the confusion matrix of the model's performance, illustrating how the model classifies the robot's maintenance needs:
