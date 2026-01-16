@@ -28,10 +28,6 @@ To run the project, you need to install the following libraries:
 - Seaborn
 - Joblib
 
-You can install the required libraries using the command:
-
-```bash
-pip install -r requirements.txt
 
 System Architecture:
 The system includes the following steps:
