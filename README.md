@@ -81,22 +81,18 @@ The following confusion matrix shows the performance of the model on the dataset
 ![Confusion matrix](diagrams/confusion_matrix_heatmap.png)
 
 
-Interpretation of the Confusion Matrix:
+###  Interpretation of the Confusion Matrix
 
-True Positives (Diagonal Elements): The diagonal elements (e.g., Ball_007_1, Ball_014_1, etc.) represent the cases where the model made correct predictions.
+**True Positives (Diagonal Elements)**
+The diagonal elements (e.g., `Ball_007_1`, `Ball_014_1`, etc.) represent the cases where the model made correct predictions:
+* **`Ball_007_1`**: 52 instances were correctly classified as `Ball_007_1`, and 5 instances were misclassified as other classes.
+* **`Ball_014_1`**: 52 instances were correctly classified as `Ball_014_1`, with 1 misclassified as `Ball_021_1`.
+* **`Normal_1`**: 58 instances were correctly classified as `Normal_1`.
 
-Ball_007_1: 52 instances were correctly classified as Ball_007_1, and 5 instances were misclassified as other classes.
+**False Positives and False Negatives**
+Misclassifications appear off the diagonal. The misclassification rates give insight into how well the model is generalizing:
+* For example, `Ball_021_1` is misclassified into multiple other categories (1 misclassified as `Ball_007_1` and another misclassified as `Ball_014_1`).
 
-Ball_014_1: 52 instances were correctly classified as Ball_014_1, with 1 misclassified as Ball_021_1.
-
-Normal_1: 58 instances were correctly classified as Normal_1.
-
-False Positives and False Negatives: Misclassifications appear off the diagonal. For example, Ball_021_1 is misclassified into multiple other categories. The misclassification rates will give insight into how well the model is generalizing.
-
-Ball_021_1 has 1 misclassified as Ball_007_1 and another misclassified as Ball_014_1.
-
-Model's Strengths and Weaknesses:
-
-The model performs well for Normal_1 and IR_007_1, with minimal misclassifications.
-
-There are a few misclassifications for OR_014_6_1, indicating potential areas for improvement, especially in distinguishing this class from others.
+**Model's Strengths and Weaknesses**
+* **Strengths:** The model performs exceptionally well for `Normal_1` and `IR_007_1`, with minimal misclassifications.
+* **Weaknesses:** There are a few misclassifications for `OR_014_6_1`, indicating potential areas for improvement, especially in distinguishing this specific class from the others.
