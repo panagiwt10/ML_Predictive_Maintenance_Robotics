@@ -48,14 +48,13 @@ Principal Component Analysis (PCA): Applied to reduce the dimensionality of the 
 
 The following heatmap shows the correlation matrix of the features used in the predictive maintenance model. It helps to visualize how each feature relates to the others, which can be important for understanding the relationships between them.
 
-- **max** and **min** features have a strong negative correlation (-0.99), indicating that when one increases, the other tends to decrease.
-- **mean**, **sd**, **rms**, **kurtosis**, and **crest** are positively correlated, suggesting they may share similar trends in their values.
-- Features such as **skewness** and **form** show weaker correlations with others, which may indicate that they carry different information.
+- `**max**` and `**min**` features have a strong negative correlation (-0.99), indicating that when one increases, the other tends to decrease.
+- `**mean**`, `**sd**`, `**rms**`, `**kurtosis**`, and `**crest**` are positively correlated, suggesting they may share similar trends in their values.
+- Features such as `**skewness**` and `**form**` show weaker correlations with others, which may indicate that they carry different information.
 
 ![Correlation Heatmap](diagrams/correlation_heatmap.png)
 
 The heatmap is an essential tool for exploring the data before training the model, as it helps identify which features are more or less related. This information can assist in feature engineering, selection, and improving the model's performance.
-
 
 
 ## Visualizations
