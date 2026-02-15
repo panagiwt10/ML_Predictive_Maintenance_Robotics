@@ -63,14 +63,11 @@ Confusion Matrix Heatmap
 
 The following heatmap shows the confusion matrix of the model's performance, illustrating how the model classifies the robot's maintenance needs:
 
-Correlation Heatmap
+`Correlation Heatmap`
 
 The following heatmap shows the correlation matrix of the features used in the predictive maintenance model. It helps to visualize how each feature relates to the others.
-
 max and min features have a strong negative correlation (-0.99), indicating that when one increases, the other tends to decrease.
-
 mean, sd, rms, kurtosis, and crest are positively correlated, suggesting they may share similar trends in their values.
-
 Features such as skewness and form show weaker correlations with others, which may indicate that they carry different information.
 
 
