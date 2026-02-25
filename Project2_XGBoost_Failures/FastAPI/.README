@@ -1,6 +1,0 @@
-To run the file `fast_API_ML.py` , you will need a *terminal* and run the following command: 
-`python -m uvicorn fast_API_ML:app --reload`  
-
-Nextly a port number will be displayed ,left click and follow the link.As you make sure the web opens , you'll need to change 
-the link by addid the following: `/docs`.With that, you will be guided to the Swagger UI and you can add the parameters to check 
-the ML model.
